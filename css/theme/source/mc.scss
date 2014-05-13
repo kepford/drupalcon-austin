@@ -10,7 +10,10 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-
+// Colors
+$yellow: #d09215;
+$grey: #444444;
+$blue: #003954;
 
 // Include theme-specific fonts
 @font-face {
@@ -36,18 +39,22 @@
   -webkit-column-gap: 20px;
 }
 
+.right {
+  text-align: right;
+}
+
 // Override theme settings (see ../template/settings.scss)
 $backgroundColor: #f5f5f5;
 
 // Primary/body text
 $mainFont: 'Dosis', sans-serif;
 $mainFontSize: 36px;
-$mainColor: #444444;
+$mainColor: $grey;
 
 // Headings
 $headingMargin: 0 0 20px 0;
 $headingFont: 'Dosis SemiBold', Impact, sans-serif;
-$headingColor: #d09215;
+$headingColor: $yellow;
 $headingLineHeight: 0.9em;
 $headingLetterSpacing: 0.02em;
 $headingTextTransform: none;
@@ -55,20 +62,69 @@ $heading1TextShadow: none;
 $headingTextShadow: none;
 
 // Links and actions
-$linkColor: #d09215;
+$linkColor: $yellow;
 $linkColorHover: lighten( $linkColor, 20% );
 
 // Text selection
 $selectionBackgroundColor: #FF5E99;
 $selectionColor: #fff;
 
-.reveal section .three-col img {
-  margin: 40px 0;
-  background: none;
-  border: 0;
+.reveal .slides section img {
+  border: none;
   box-shadow: none;
 }
 
+[data-state="mediacurrent"] {
+  strong {
+    color: $yellow;
+  }
+  li {
+    font-size: 55%;
+  }
+}
+
+[data-state="twd"] {
+
+}
+
+div.mediacurrent-logo {
+  height: 100%;
+  width: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #003954;
+  .logo-wrapper {
+    border-bottom: 1px solid $backgroundColor;
+  }
+  img {
+    width: 50px;
+    position: relative;
+    top: 15px;
+    left: 8px;
+    margin-bottom: 30px;
+  }
+}
+
+div.footer-twitter {
+  height: 30px;
+  width: 100px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  font-family: $mainFont;
+  a {
+    color: $mainColor;
+  }
+}
+
+div.footer-wave {
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: url(source/mc/wave.png), repeat-x;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 

@@ -37,12 +37,20 @@
 	</head>
 
 	<body>
-
+		<div class="footer-wave"></div>
+		<div class="mediacurrent-logo">
+			<div class="logo-wrapper">
+				<img src="css/theme/source/mc/mc-logo@2x.png" alt="" width="" height="" border="0" />
+			</div>
+		</div>
+		<div class="footer-twitter">
+			<a href="http://twitter.com/mediacurrent">@Mediacurrent</a>
+		</div>
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section data-state="mc"  data-background="css/theme/source/mc/mc-background-left.png" data-background-repeat="none" data-background-size="5%">
+				<section data-state="mc">
 					<h2>Building a Blog with Drupal 8</h2>
 					<p>
 						<small>By: <a href="http://bobkepford.com">Bob Kepford</a> / <a href="http://twitter.com/kepford">@kepford</a></small>
@@ -50,35 +58,39 @@
 				</section>
 
 				<section>
-					<h2>Bob Kepford</h2>
-					<p>
-						Senior Drupal Developer
-					</p>
-					<p>
-						<a href="http://twitter.com/kepford">@kepford</a>
-					</p>
-
+					<div class="two-col">
+						<div class="right">
+						<h3>Bob Kepford</h3>
+						<p>
+							Senior Drupal Developer
+						</p>
+						<p>
+							@kepford
+						</p>
+						</div>
+						<img src="css/theme/source/mc/profile.jpg" alt="" width="" height="" border="0" />
+						</div>
 					<aside class="notes">
 						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 					</aside>
 				</section>
-				<section data-state="3col">
+				<section data-state="mediacurrent">
 					<p>We help organizations build highly impactful, elegantly designed <strong>Drupal websites</strong> that achieve the strategic results you need.</p>
 					<br />
 					<div class="three-col">
 						<div class="col1">
 							<img src="css/theme/source/mc/content-icon.png" />
-							<h4>Digital Strategy</h4>
+							<h5>Digital Strategy</h5>
 							<ul>
 								<li>Content Strategy </li>
-								<li>Content  Generation</li>
+								<li>Content Generation</li>
 								<li>Result Metrics</li>
 								<li>Marketing Automation Integration</li>
 							</ul>
 						</div>
 						<div class="col2">
 							<img src="css/theme/source/mc/design-icon.png" />
-							<h4>Design/Theming</h4>
+							<h5>Design/Theming</h5>
 							<ul>
 								<li>Usability Testing</li>
 								<li>Responsive Design</li>
@@ -88,7 +100,7 @@
 						</div>
 						<div class="col3">
 							<img src="css/theme/source/mc/dev-icon.png" />
-							<h4>Development</h4>
+							<h5>Development</h5>
 							<ul>
 								<li>Drupal Support </li>
 								<li>Custom Module Development</li>
@@ -98,33 +110,38 @@
 						</div>
 					</div>
 				</section>
-				<section>
-					<h2>TheWeeklyDrop.com</h2>
+				<section data-state="twd">
+					<!-- <img src="css/theme/source/mc/twd-die-cut-sticker-template-vert.png" alt="" width="" height="" border="0" /> -->
+					<img src="css/theme/source/mc/twd-logo.png" alt="" width="" height="" border="0" />
 				</section>
 				<section>
           <h2>What's New</h2>
-          <ul class="two-col">
-						<li>Fields</li>
-						<li>HTML 5</li>
-						<li>Better Content Editing</li>
-						<li>Display & Form Modes</li>
-						<li>Mobile</li>
-						<li>Views</li>
-						<li>Accessibility</li>
-						<li>Better Multi-language support</li>
-						<li>CMI</li>
-						<li>Web Services</li>
-					</ul>
+          <br />
+          <br />
+          <div class="two-col">
+	          <ul>
+							<li>Fields</li>
+							<li>HTML 5</li>
+							<li>Better Content Editing</li>
+							<li>Display & Form Modes</li>
+							<li>Mobile</li>
+							<li>Views</li>
+							<li>Accessibility</li>
+							<li>Better Multi-language support</li>
+							<li>CMI</li>
+							<li>Web Services</li>
+						</ul>
+					</div>
 				</section>
 				<section>
 					<h2>Fields</h2>
-					<h4>Comments are now fields New field types</h4>
+					<h4 class="fragment">Comments are now fields New field types</h4>
 					<ul>
-						<li>Entity Reference</li>
-						<li>Link</li>
-						<li>Email</li>
-						<li>Telephone</li>
-						<li>Placeholders</li>
+						<li class="fragment">Entity Reference</li>
+						<li class="fragment">Link</li>
+						<li class="fragment">Email</li>
+						<li class="fragment">Telephone</li>
+						<li class="fragment">Placeholders</li>
 					</ul>
 				</section>
 				<section>
@@ -134,25 +151,32 @@
 					<h2>HTML5</h2>
 					<h4>New elements</h4>
 					<ul>
-						<li>Picture element: Support for responsive image displays</li>
-						<li>Date element</li>
-						<li>E-mail element</li>
-						<li>Phone element</li>
+						<li class="fragment">Picture element: Support  for responsive image displays</li>
+						<li class="fragment">Date element</li>
+						<li class="fragment">E-mail element</li>
+						<li class="fragment">Phone element</li>
 					</ul>
 
 				</section>
 				<section>
 					<h2>Content Editing</h2>
 					<ul>
-						<li>CKEditor WYSIWYG</li>
-						<li>In-place editing</li>
-						<li>Insert inline images</li>
-						<li>Save as draft</li>
+						<li class="fragment">CKEditor WYSIWYG</li>
+						<li class="fragment">In-place editing</li>
+						<li class="fragment">Insert inline images</li>
+						<li class="fragment">Save as draft</li>
 					</ul>
 				</section>
 				<section>
 					<h2>GIFs</h2>
 				</section>
+				<section>
+				<img src="css/theme/source/mc/ckeditor.gif" alt="" width="" height="" border="0" />
+				</section>
+				<section>
+					<img src="css/theme/source/mc/inplace.gif" alt="" width="" height="" border="0" />
+				</section>
+
 				<section>
 					<h2>Form & Display Modes</h2>
 					<ul>
@@ -205,6 +229,14 @@
 				</section>
 				<section>
 					<h2>YAML</h2>
+				</section>
+				<section>
+					<h2>Thank You</h2>
+					<p>Questions?</p>
+					<p><a href="http://twitter.com/mediacurrent">@Mediacurrent</a></p>
+					<p><a href="http://mediacurrent.com">Mediacurrent.com</a></p>
+					<p>slideshare.net/mediacurrent</p>
+
 				</section>
 				<!-- Example of nested vertical slides -->
 				<section>
@@ -509,7 +541,7 @@ function linkify( selector ) {
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
+				controls: false,
 				progress: true,
 				history: true,
 				center: true,
