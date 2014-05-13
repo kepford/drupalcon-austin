@@ -1,0 +1,79 @@
+/**
+ * Mediacurrent theme for reveal.js.
+ *
+ * Copyright (C) 2014 Mediacurrent Mediacurrent.com
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+	font-family: 'Dosis SemiBold';
+	src: url('../../lib/font/dosis/Dosis-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../../lib/font/dosis/Dosis-SemiBold.ttf') format('truetype');
+
+	font-weight: normal;
+	font-style: normal;
+}
+
+.two-col {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+}
+
+.three-col {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+}
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #f5f5f5;
+
+// Primary/body text
+$mainFont: 'Dosis', sans-serif;
+$mainFontSize: 36px;
+$mainColor: #444444;
+
+// Headings
+$headingMargin: 0 0 20px 0;
+$headingFont: 'Dosis SemiBold', Impact, sans-serif;
+$headingColor: #d09215;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: none;
+$heading1TextShadow: none;
+$headingTextShadow: none;
+
+// Links and actions
+$linkColor: #d09215;
+$linkColorHover: lighten( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+.reveal section .three-col img {
+  margin: 40px 0;
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
