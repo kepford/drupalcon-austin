@@ -74,6 +74,14 @@ $selectionColor: #fff;
   box-shadow: none;
 }
 
+// The title-slide slide
+[data-state="title-slide"] {
+ .right {
+    position: relative;
+    top: 50%;
+  }
+}
+
 // The Mediacurrent slide
 [data-state="mediacurrent"] {
   strong {
@@ -94,6 +102,33 @@ $selectionColor: #fff;
   .icon {
     width: 100%;
     height: 190px;
+  }
+}
+
+// The thankyou slide
+[data-state="thankyou"] {
+  .two-col {
+    margin-top: 15%;
+    margin-bottom: 5%;
+  }
+  .twitter {
+    background: url('source/mc/twitterlogoorange.png') no-repeat;
+    background-size: 65px;
+    background-position: 75px top;
+    height: 75px;
+  }
+  .website {
+    background: url('source/mc/desktop.png') no-repeat;
+    background-size: 65px;
+    background-position: 50px top;
+    height: 75px;
+  }
+  .slideshare {
+    background: url('source/mc/slideshareorange.png') no-repeat;
+    background-size: 25%;
+    background-position: center top;
+    height: 75px;
+    padding-top: 60px;
   }
 }
 
