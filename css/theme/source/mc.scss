@@ -44,7 +44,7 @@ $blue: #003954;
 }
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #f5f5f5;
+$backgroundColor: #f7f7f7;
 
 // Primary/body text
 $mainFont: 'Dosis', sans-serif;
@@ -94,36 +94,57 @@ div.mediacurrent-logo {
   bottom: 0;
   left: 0;
   background: #003954;
-  .logo-wrapper {
-    border-bottom: 1px solid $backgroundColor;
-  }
-  img {
-    width: 50px;
+  .logo {
     position: relative;
-    top: 15px;
-    left: 8px;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
     margin-bottom: 30px;
+    border-bottom: 1px solid $backgroundColor;
+    background: url('source/mc/mc-logo@2x.png') no-repeat;
+    background-size: 50px auto;
+    background-position-y: 15px;
+    background-position-x: 10px;
+  }
+  .drop {
+    position: absolute;
+    bottom: 10px;
+    width: 75px;
+    height: 75px;
+    background: url('source/mc/drop.png') no-repeat;
+    background-size: 30px;
+    background-position-y: 50%;
+    background-position-x: 50%;
   }
 }
 
 div.footer-twitter {
-  height: 30px;
-  width: 100px;
+  height: 40px;
+  width: 130px;
   position: absolute;
-  bottom: 15px;
+  bottom: 25px;
   right: 10px;
   font-family: $mainFont;
+  background: url('source/mc/twitterlogoorange.png') no-repeat;
+  background-size: 35px;
+  background-position-y: top;
+  text-align: right;
   a {
+    position: relative;
+    top: 5px;
     color: $mainColor;
+    text-decoration: none;
   }
 }
 
 div.footer-wave {
-  height: 20px;
+  height: 15px;
   width: 100%;
   position: absolute;
   bottom: 0;
-  background: url(source/mc/wave.png), repeat-x;
+  background: url('source/mc/wave-crop.png') repeat-x;
+  background-size: auto 15px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
