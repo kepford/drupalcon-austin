@@ -74,12 +74,26 @@ $selectionColor: #fff;
   box-shadow: none;
 }
 
+// The Mediacurrent slide
 [data-state="mediacurrent"] {
   strong {
     color: $yellow;
   }
   li {
     font-size: 55%;
+  }
+  div.content .icon {
+    background: url('source/mc/content-icon.png') top center no-repeat;
+  }
+  div.design .icon {
+    background: url('source/mc/design-icon.png') top center no-repeat;
+  }
+  div.dev .icon {
+    background: url('source/mc/dev-icon.png') top center no-repeat;
+  }
+  .icon {
+    width: 100%;
+    height: 190px;
   }
 }
 
