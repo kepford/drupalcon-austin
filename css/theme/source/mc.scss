@@ -76,12 +76,29 @@ $selectionColor: #fff;
 
 // The title-slide slide
 [data-state="title-slide"] {
- .right {
-    position: relative;
-    top: 50%;
+  .dc-austin {
+    background: url('source/mc/DrupalCon-Austin-Logo.png') no-repeat rgba(51, 51, 51, 0.14);
+    background-size: 300px 212px;
+    background-position: 50% 50%;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+  }
+  div.left-side {
+    width: 68%;
+    float: left;
+    padding-right: 2%;
+    position: absolute;
+    top: 33%;
+  }
+  div.right-side {
+    width: 28%;
+    float: right;
+    padding-left: 2%;
   }
 }
-
 // The Mediacurrent slide
 [data-state="mediacurrent"] {
   strong {

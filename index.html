@@ -52,16 +52,13 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section data-state="title-slide">
-					<h3>Build a Blog with Drupal 8 on the Day it's Released</h3>
-							<p>By: <a href="http://bobkepford.com">Bob Kepford</a></p>
-
-				  <div class="two-col">
-				  	<div class="right" >
-				  	  <a href="https://austin2014.drupal.org/session/creating-blog-drupal-8-configuration-api">June 4th, 2014</a>
-						</div>
-
-							<img src="css/theme/source/mc/DrupalCon-Austin-Logo.png" alt="" width="" height="" border="0" />
-
+					<div class="left-side">
+						<h3>Build a Blog with Drupal 8 on the Day it's Released</h3>
+						<p>By: <a href="http://bobkepford.com">Bob Kepford</a></p>
+					</div>
+					<div class="right-side">
+						<div class="dc-austin"></div>
+			  	  <a href="https://austin2014.drupal.org/session/creating-blog-drupal-8-configuration-api">June 4th, 2014</a>
 					</div>
 				</section>
 				<section>
@@ -115,8 +112,8 @@
 					</div>
 				</section>
 				<section data-state="twd">
-					<!-- <img src="css/theme/source/mc/twd-die-cut-sticker-template-vert.png" alt="" width="" height="" border="0" /> -->
-					<img src="css/theme/source/mc/twd-logo.png" alt="" width="" height="" border="0" />
+
+					<a href="http://www.theweeklydrop.com"><img src="css/theme/source/mc/twd-logo.png" alt="" width="" height="" border="0" /></a>
 				</section>
 				<section>
           <h2>What's New</h2>
@@ -142,51 +139,81 @@
 				</section>
 				<section>
 					<h2>HTML5</h2>
-					<p>New elements</p>
-					<ul>
-						<li class="fragment">Picture element: Support  for responsive image displays</li>
-						<li class="fragment">Date element</li>
-						<li class="fragment">E-mail element</li>
-						<li class="fragment">Phone element</li>
-						<li class="fragment">Placeholder Attribute</li>
-					</ul>
-				  <img src="css/theme/source/mc/date.png" alt="" width="" height="" border="0" class="fragment"/>
+					<p>New Stuff!</p>
+				</section>
+				<section>
+					<h3>Picture element</h3>
+					<p>Support  for responsive image displays</p>
+					<pre>
+						<code>
+<picture width="500" height="500">
+	<source media="(min-width: 45em)" src="large.jpg">
+	<source media="(min-width: 18em)" src="med.jpg">
+	<source src="small.jpg">
+	<img src="small.jpg" alt="">
+	<p>Accessible text</p>
+</picture>
+					</code>
+				</pre>
+				</section>
+				<section>
+					<h3>Date element</h3>
+
+					<img src="css/theme/source/mc/date.png" alt="" width="" height="" border="0"/>
+				</section>
+				<section>
+					<h3>E-mail & Phone Elements</h3>
+					<img src="css/theme/source/mc/phone.png" alt="" width="" height="" border="0"/>
+				</section>
+				<section>
+					<h3>Placeholder Attribute</h3>
+					<img src="css/theme/source/mc/placeholder.png" alt="" width="" height="" border="0"/>
 				</section>
 				<section>
 					<h2>Fields</h2>
 					<ul>
 						<li class="fragment">Comments are now fields</li>
-						<li class="fragment">New field types</li>
-						<li class="fragment">Entity Reference</li>
-						<li class="fragment">Link</li>
-						<li class="fragment">Email</li>
-						<li class="fragment">Telephone</li>
+						<li class="fragment">Entity Reference Field</li>
+						<li class="fragment">Link Field</li>
+						<li class="fragment">Email Field</li>
+						<li class="fragment">Telephone Field</li>
 					</ul>
 				</section>
 				<section>
 					<h2>Content Editing</h2>
 					<ul>
-						<li class="fragment">CKEditor WYSIWYG</li>
-						<li class="fragment">In-place editing</li>
+						<li class="fragment">WYSIWYG out of the box! (CKEditor)</li>
 						<li class="fragment">Insert inline images (with captions)</li>
-						<li class="fragment">Save as draft</li>
+						<li class="fragment">In-place editing</li>
+						<li class="fragment">Improved publishing UX including Drafts!</li>
 					</ul>
 				</section>
 				<section>
-					<p>WYSIWYG</p>
+					<h2>WYSIWYG</h2>
+				</section>
+				<section>
 				<img src="css/theme/source/mc/ckeditor.gif" alt="" width="100%" height="" border="0" />
 				</section>
 				<section>
-					<p>In-place editing</p>
+					<h2>In-place editing</h2>
+				</section>
+				<section>
 					<img src="css/theme/source/mc/inplace.gif" alt="" width="" height="" border="0" />
 				</section>
 				<section>
-					<h2>Form & Display Modes</h2>
+					<h2>Form & Field Display Changes</h2>
+					<img src="css/theme/source/mc/form-display.gif" alt="" width="" height="" border="0" />
+				</section>
+				<section>
+					<h2>View (Display) Modes</h2>
 					<ul>
-						<li>Customize entity forms</li>
 						<li>Create and manage view modes for all entities</li>
+						<li>Includes form modes and view modes</li>
 						<li>Replaces Entity view modes module</li>
 					</ul>
+				</section>
+				<section>
+					<img src="css/theme/source/mc/viewmodes.gif" alt="" width="" height="" border="0" />
 				</section>
 				<section>
 					<h2>Mobile</h2>
@@ -224,29 +251,53 @@
 				</section>
 				<section>
 					<h2>Tour!</h2>
-					<ul>
-						<li>Easily create tours for your site.</li>
-					</ul>
-
+						<p>Easily create tours for your site.</p>
+				</section>
+				<section>
+					<img src="css/theme/source/mc/tour.gif" alt="" width="" height="" border="0" />
 				</section>
 				<section>
           <h2>Configuration API</h2>
 				</section>
 				<section>
-					<h2>Look Ma, No Features</h2>
+					<h2>Full Export/Import</h2>
 				</section>
 				<section>
-					<h2>Full Export/Import</h2>
+					<img src="css/theme/source/mc/full-site-export.gif" alt="" width="" height="" border="0" />
 				</section>
 			  <section>
 					<h2>YAML</h2>
 					<img src="css/theme/source/mc/yml.png" alt="" width="" height="" border="0" />
 				</section>
 				<section>
+          <h2>You Can Build Full Featured Sites with Drupal Core Alone</h2>
+          <br />
+          <br />
+          <div class="two-col">
+          	<ul>
+							<li>New Fields</li>
+							<li>HTML 5</li>
+							<li>Better Content Editing</li>
+							<li>Display & Form Modes</li>
+							<li>Mobile</li>
+						</ul>
+	          <ul>
+							<li>Views</li>
+							<li>Tour</li>
+							<li>Accessibility</li>
+							<li>Better Multi-language support</li>
+							<li>CMI</li>
+							<li>Web Services</li>
+						</ul>
+					</div>
+				</section>
+				<section>
 					<h3>Resources</h3>
 					<ul>
 						<li><a href="https://www.acquia.com/blog/tutorial-drupal-8-site-building-preview-less-more">Tutorial: Drupal 8 Site Building preview - Less is more</a></li>
 						<li><a href="https://www.acquia.com/blog/ultimate-guide-drupal-8-episode-3-site-builder-improvements">Ultimate Guide to Drupal 8: Episode 3 - Site Builder Improvements</a></li>
+						<li><a href="http://www.mediacurrent.com/tags/drupal-8">Mediacurrent's Drupal 8 series</a></li>
+						<li><a href="http://theweeklydrop.com">TheWeeklyDrop.com</a></li>
 					</ul>
 				</section>
  				<section data-state="thankyou">
