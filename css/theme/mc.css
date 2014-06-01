@@ -21,18 +21,127 @@
   -webkit-column-count: 3;
   -webkit-column-gap: 20px; }
 
-.reveal section .three-col img {
-  margin: 40px 0;
-  background: none;
-  border: 0;
+.right {
+  text-align: right; }
+
+.reveal .slides section img {
+  border: none;
   box-shadow: none; }
+
+[data-state="title-slide"] .dc-austin {
+  background: url("source/mc/DrupalCon-Austin-Logo.png") no-repeat rgba(51, 51, 51, 0.14);
+  background-size: 300px 212px;
+  background-position: 50% 50%;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto; }
+[data-state="title-slide"] div.left-side {
+  width: 68%;
+  float: left;
+  padding-right: 2%;
+  position: absolute;
+  top: 33%; }
+[data-state="title-slide"] div.right-side {
+  width: 28%;
+  float: right;
+  padding-left: 2%; }
+
+[data-state="mediacurrent"] strong {
+  color: #d09215; }
+[data-state="mediacurrent"] li {
+  font-size: 55%; }
+[data-state="mediacurrent"] div.content .icon {
+  background: url("source/mc/content-icon.png") top center no-repeat; }
+[data-state="mediacurrent"] div.design .icon {
+  background: url("source/mc/design-icon.png") top center no-repeat; }
+[data-state="mediacurrent"] div.dev .icon {
+  background: url("source/mc/dev-icon.png") top center no-repeat; }
+[data-state="mediacurrent"] .icon {
+  width: 100%;
+  height: 190px; }
+
+[data-state="thankyou"] .two-col {
+  margin-top: 15%;
+  margin-bottom: 5%; }
+[data-state="thankyou"] .twitter {
+  background: url("source/mc/twitterlogoorange.png") no-repeat;
+  background-size: 65px;
+  background-position: 75px top;
+  height: 75px; }
+[data-state="thankyou"] .website {
+  background: url("source/mc/desktop.png") no-repeat;
+  background-size: 65px;
+  background-position: 50px top;
+  height: 75px; }
+[data-state="thankyou"] .slideshare {
+  background: url("source/mc/slideshareorange.png") no-repeat;
+  background-size: 25%;
+  background-position: center top;
+  height: 75px;
+  padding-top: 60px; }
+
+div.mediacurrent-logo {
+  height: 100%;
+  width: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #003954; }
+  div.mediacurrent-logo .logo {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #f7f7f7;
+    background: url("source/mc/mc-logo@2x.png") no-repeat;
+    background-size: 50px auto;
+    background-position-y: 15px;
+    background-position-x: 10px; }
+  div.mediacurrent-logo .drop {
+    position: absolute;
+    bottom: 10px;
+    width: 75px;
+    height: 75px;
+    background: url("source/mc/drop.png") no-repeat;
+    background-size: 30px;
+    background-position-y: 50%;
+    background-position-x: 50%; }
+
+div.footer-twitter {
+  height: 40px;
+  width: 130px;
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  font-family: "Dosis", sans-serif;
+  background: url("source/mc/twitterlogoorange.png") no-repeat;
+  background-size: 35px;
+  background-position-y: top;
+  text-align: right; }
+  div.footer-twitter a {
+    position: relative;
+    top: 5px;
+    color: #444444;
+    text-decoration: none; }
+
+div.footer-wave {
+  height: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: url("source/mc/wave-crop.png") repeat-x;
+  background-size: auto 15px; }
 
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: whitesmoke;
-  background-color: whitesmoke; }
+  background: #f7f7f7;
+  background-color: #f7f7f7; }
 
 .reveal {
   font-family: "Dosis", sans-serif;
