@@ -188,3 +188,47 @@ ul, ol, div, p {
 .reveal small a {
 	font-size: 16pt !important;
 }
+
+[data-state="title-slide"] div.left-side {
+	width: 65%;
+}
+
+[data-state="title-slide"] div.right-side {
+	position: absolute;
+	top: 200px;
+	right: 10px;
+}
+
+[data-state="mediacurrent"] .three-col {
+	padding-left: 60px;
+}
+
+[data-state="mediacurrent"] .three-col .col1,
+[data-state="mediacurrent"] .three-col .col2,
+[data-state="mediacurrent"] .three-col .col3 {
+	float: left;
+}
+
+[data-state="me"] .two-col div.right {
+	float: left;
+	padding-left: 100px;
+	padding-top: 200px;
+}
+
+
+[data-state="me"] .two-col img {
+	clear: right;
+	padding-top: 200px;
+}
+
+[data-state="thankyou"] .twitter {
+	background-position: 315px top;
+}
+
+[data-state="thankyou"] .website {
+	background-position: 315px top;
+}
+
+[data-state="thankyou"] p.website {
+	padding-left: 40px;
+}
