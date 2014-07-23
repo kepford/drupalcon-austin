@@ -9,6 +9,9 @@
   src: url("../../lib/font/dosis/Dosis-webfont.eot?#iefix") format("embedded-opentype"), url("../../lib/font/dosis/Dosis-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
+.reveal .controls {
+  right: 150px; }
+
 .two-col {
   -moz-column-count: 2;
   -moz-column-gap: 20px;
